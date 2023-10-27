@@ -18,7 +18,15 @@
   border-radius: 5em;
   cursor: pointer;
   padding: 0.8em;
+  transition: ease-in-out 200ms;
 }
 .site-header .nav-visibility-btn svg {
   max-width: 3em;
+  transition: ease-in-out 200ms;
+}
+.site-header .nav-visibility-btn:hover {
+  background-color: rgb(218, 230, 230);
+}
+.site-header .nav-visibility-btn:hover svg {
+  fill: cornflowerblue;
 }/*# sourceMappingURL=header.module.css.map */

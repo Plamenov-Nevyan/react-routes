@@ -22,7 +22,11 @@
   padding: 1em;
   background: burlywood;
   border-radius: 1em;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   cursor: pointer;
+  transition: ease-in-out 200ms;
 }
 .blog-section .articles-wrapper .article .article-title {
   display: flex;
@@ -36,6 +40,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 0.5em;
+}
+.blog-section .articles-wrapper .article:hover {
+  background-color: rgb(218, 230, 230);
 }
 .blog-section .add-new-article {
   flex-basis: 40%;
@@ -60,12 +67,48 @@
 }
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-input {
   padding: 0.6em;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 2px solid darkturquoise;
+  opacity: 0.3;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-input:focus {
+  opacity: 1;
+  border-left: 2px solid darkturquoise;
+  background-color: whitesmoke;
+  border-radius: 0 1em 0 0;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-input:hover {
+  background-color: rgb(218, 230, 230);
+  border-radius: 0 1em 0 0;
 }
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea {
   max-height: 10em;
   height: 10em;
   padding: 0.6em;
   resize: none;
+  border: none;
+  background: transparent;
+  border-left: 2px solid darkturquoise;
+  border-bottom: 2px solid darkturquoise;
+  outline: none;
+  opacity: 0.4;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea:hover {
+  background-color: rgb(218, 230, 230);
+  border-radius: 0 1em 0 0;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea:focus {
+  opacity: 1;
+  background-color: whitesmoke;
+  border-radius: 0 1em 0 0;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
 }
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-input:focus + .add-new-label,
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-input + .static,
@@ -81,6 +124,27 @@
   left: 0.2em;
   transition: transform 200ms ease;
   pointer-events: none;
+}
+.blog-section .add-new-article .add-new-form .submit-new-btn {
+  padding: 0.5em;
+  max-width: 40%;
+  align-self: center;
+  width: 40%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: cornflowerblue;
+  color: azure;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: ease-in-out 200ms;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.blog-section .add-new-article .add-new-form .submit-new-btn:hover {
+  background-color: rgb(218, 230, 230);
+  color: cornflowerblue;
 }
 
 @keyframes blink-animation {

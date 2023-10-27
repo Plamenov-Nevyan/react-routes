@@ -181,7 +181,7 @@ export function Blog() {
               </span>
             )}
           </fieldset>
-          <button>Submit</button>
+          <button className={styles["submit-new-btn"]}>Submit</button>
         </form>
       </div>
     </section>
