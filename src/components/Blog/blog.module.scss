@@ -1,0 +1,88 @@
+.blog-section {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+    height: fit-content;
+    .articles-wrapper {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .blink {
+            animation: blink-animation 1s; 
+          }
+        .article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            background: burlywood;
+            border-radius: 1em;
+            cursor: pointer;
+            .article-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5em;
+                width: 100%;
+            }
+            .details {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0.5em;
+            }
+        }
+    }
+    .add-new-article {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        position: sticky;
+        top: 2em;
+        .add-new-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            .add-new-field{
+                display: flex;
+                flex-direction: column;
+                border: none;
+                position: relative;
+                .add-new-input {
+                    padding: 0.6em;
+                }
+                .add-new-textarea {
+                    max-height: 10em;
+                    height: 10em;
+                    padding: .6em;
+                    resize: none;
+                }
+                .add-new-input:focus + .add-new-label,
+                .add-new-input + .static,
+                .add-new-textarea:focus + .add-new-label,
+                .add-new-textarea + .static {
+                    transform: translateY(-1.5em);
+                }
+                .add-new-label, .static {
+                    padding: 0 .4em;
+                    position: absolute;
+                    left: 0.5em;
+                    top: .2em;
+                    left: .2em;
+                    transition: transform 200ms ease;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }

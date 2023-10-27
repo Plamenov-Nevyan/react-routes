@@ -1,0 +1,96 @@
+.blog-section {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.blog-section .articles-wrapper {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.blog-section .articles-wrapper .blink {
+  animation: blink-animation 1s;
+}
+.blog-section .articles-wrapper .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background: burlywood;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.blog-section .articles-wrapper .article .article-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  width: 100%;
+}
+.blog-section .articles-wrapper .article .details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em;
+}
+.blog-section .add-new-article {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 2em;
+}
+.blog-section .add-new-article .add-new-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.blog-section .add-new-article .add-new-form .add-new-field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  position: relative;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-input {
+  padding: 0.6em;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea {
+  max-height: 10em;
+  height: 10em;
+  padding: 0.6em;
+  resize: none;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-input:focus + .add-new-label,
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-input + .static,
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea:focus + .add-new-label,
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea + .static {
+  transform: translateY(-1.5em);
+}
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-label, .blog-section .add-new-article .add-new-form .add-new-field .static {
+  padding: 0 0.4em;
+  position: absolute;
+  left: 0.5em;
+  top: 0.2em;
+  left: 0.2em;
+  transition: transform 200ms ease;
+  pointer-events: none;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=blog.module.css.map */
