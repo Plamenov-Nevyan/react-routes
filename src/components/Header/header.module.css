@@ -1,0 +1,24 @@
+.site-header {
+  background-image: url("./header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.site-header .nav-visibility-btn {
+  flex-basis: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 5em;
+  cursor: pointer;
+  padding: 0.8em;
+}
+.site-header .nav-visibility-btn svg {
+  max-width: 3em;
+}/*# sourceMappingURL=header.module.css.map */

@@ -1,4 +1,3 @@
-import {SideNavigation} from "../SideNavigation/SideNavigation";
 import styles from "./home.module.css"
 import { useState } from "react";
 
@@ -9,7 +8,6 @@ export function Home(){
 
     return(
         <section className={styles["home-section"]}>
-            <SideNavigation />
             <div className={styles.calculator}>
                 <span className={styles["error-message"]}></span>
                 <section className={styles["calculator-top"]}>

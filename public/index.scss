@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-size: clamp(.5rem, 1.3rem, 1.6rem);
+}
+
+label {
+    font-size: clamp(.5rem, 1.5rem, 1.8rem);
+}
+
+body {
+    background-color: beige;
+}

@@ -1,32 +1,42 @@
-.calculator {
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.home-section .calculator {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 1em;
-  background-color: bisque;
-  max-width: 80vw;
-  max-height: 80vh;
+  padding: 1.4em;
+  background-color: black;
+  max-width: 100%;
+  max-height: 100%;
+  flex-basis: 45%;
+  border-radius: 1em;
 }
-.calculator .error-message {
+.home-section .calculator .error-message {
   display: none;
   color: red;
 }
-.calculator .calculator-top {
+.home-section .calculator .calculator-top {
   width: 100%;
   min-width: 5vw;
 }
-.calculator .calculator-top input {
+.home-section .calculator .calculator-top input {
   width: 100%;
   padding: 0.6em 1em;
   border-radius: 0.6em;
   border: 1px solid cornflowerblue;
   background-color: azure;
 }
-.calculator .calculator-bottom {
+.home-section .calculator .calculator-bottom {
   display: flex;
   gap: 1em;
 }
-.calculator .calculator-bottom .number-buttons {
+.home-section .calculator .calculator-bottom .number-buttons {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -34,10 +44,10 @@
   flex-wrap: wrap;
   gap: 0.3em;
 }
-.calculator .calculator-bottom .number-buttons .button-container {
+.home-section .calculator .calculator-bottom .number-buttons .button-container {
   flex: 1 1 33%;
 }
-.calculator .calculator-bottom .number-buttons .button-container button {
+.home-section .calculator .calculator-bottom .number-buttons .button-container button {
   width: 100%;
   padding: 0.3em 1em;
   border: none;
@@ -47,11 +57,11 @@
   cursor: pointer;
   transition: ease-in-out 200ms;
 }
-.calculator .calculator-bottom .number-buttons .button-container button:hover {
+.home-section .calculator .calculator-bottom .number-buttons .button-container button:hover {
   background-color: cornflowerblue;
   color: azure;
 }
-.calculator .calculator-bottom .operator-buttons {
+.home-section .calculator .calculator-bottom .operator-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +69,10 @@
   gap: 0.3em;
   flex-direction: column;
 }
-.calculator .calculator-bottom .operator-buttons .operator-container {
+.home-section .calculator .calculator-bottom .operator-buttons .operator-container {
   min-width: 100%;
 }
-.calculator .calculator-bottom .operator-buttons .operator-container button {
+.home-section .calculator .calculator-bottom .operator-buttons .operator-container button {
   width: 100%;
   padding: 0.3em 1em;
   border: none;
@@ -72,7 +82,7 @@
   cursor: pointer;
   transition: ease-in-out 200ms;
 }
-.calculator .calculator-bottom .operator-buttons .operator-container button:hover {
+.home-section .calculator .calculator-bottom .operator-buttons .operator-container button:hover {
   background-color: azure;
   color: cornflowerblue;
 }/*# sourceMappingURL=home.module.css.map */
