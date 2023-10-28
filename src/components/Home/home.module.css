@@ -18,7 +18,6 @@
   border-radius: 1em;
 }
 .home-section .calculator .error-message {
-  display: none;
   color: red;
 }
 .home-section .calculator .calculator-top {
