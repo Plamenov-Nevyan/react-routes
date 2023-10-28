@@ -1,12 +1,12 @@
 .home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  .calculator {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    .calculator {
-        display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 1.4em;
@@ -15,73 +15,77 @@
     max-height: 100%;
     flex-basis: 45%;
     border-radius: 1em;
-        .error-message {
-            color: red;
-        }
-        .calculator-top {
-            width: 100%;
-            min-width: 5vw;
-            input {
-                width: 100%;
-                padding: 0.6em 1em;
-                border-radius: .6em;
-                border: 1px solid cornflowerblue;
-                background-color: azure;
-            }
-        }
-        .calculator-bottom {
-            display: flex;
-            gap: 1em;
-            .number-buttons {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                flex: 1 1 80%;
-                flex-wrap: wrap;
-                gap: .3em;
-                .button-container {
-                    flex: 1 1 33%;
-                    button {
-                        width: 100%;
-                        padding: .3em 1em;
-                        border: none;
-                        border-radius: .4em;
-                        background-color: azure;
-                        color: cornflowerblue;
-                        cursor: pointer;
-                        transition: ease-in-out 200ms;
-                    }
-                    button:hover {
-                        background-color: cornflowerblue;
-                        color: azure;
-                    }
-                }
-            }
-            .operator-buttons {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex: 1 1 20%;
-                gap: .3em;
-                flex-direction: column;
-                .operator-container {
-                    min-width: 100%;
-                    button {
-                        width: 100%;
-                        padding: .3em 1em;
-                        border: none;
-                        border-radius: .4em;
-                        background-color: cornflowerblue;
-                        color: azure;
-                        cursor: pointer;
-                        transition: ease-in-out 200ms;
-                    }
-                    button:hover {
-                        background-color: azure;
-                        color: cornflowerblue;
-                    }
-                }
-            }
-        }
+    margin-top: 5em;
+    box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+    .error-message {
+      color: red;
     }
+    .calculator-top {
+      width: 100%;
+      min-width: 5vw;
+      input {
+        width: 100%;
+    padding: 0.5em 0.5em;
+    border-radius: 0.6em;
+    border: 1px solid cornflowerblue;
+    background-color: azure;
+      }
+    }
+    .calculator-bottom {
+      display: flex;
+      gap: 1em;
+      .number-buttons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex: 1 1 80%;
+        flex-wrap: wrap;
+        gap: 0.3em;
+        .button-container {
+          flex: 1 1 33%;
+          button {
+            width: 100%;
+            padding: 0.3em 1em;
+            border: none;
+            border-radius: 0.4em;
+            background-color: azure;
+            color: cornflowerblue;
+            cursor: pointer;
+            transition: ease-in-out 200ms;
+          }
+          button:hover {
+            background-color: cornflowerblue;
+            color: azure;
+          }
+        }
+      }
+      .operator-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 20%;
+        gap: 0.3em;
+        flex-direction: column;
+        .operator-container {
+          min-width: 100%;
+          button {
+            width: 100%;
+            padding: 0.3em 1em;
+            border: none;
+            border-radius: 0.4em;
+            background-color: cornflowerblue;
+            color: azure;
+            cursor: pointer;
+            transition: ease-in-out 200ms;
+          }
+          button:hover {
+            background-color: azure;
+            color: cornflowerblue;
+          }
+        }
+      }
+    }
+  }
 }

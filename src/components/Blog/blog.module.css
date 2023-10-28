@@ -20,13 +20,14 @@
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  background: burlywood;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 1em;
   box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   cursor: pointer;
   transition: ease-in-out 200ms;
+  gap: 2em;
 }
 .blog-section .articles-wrapper .article .article-title {
   display: flex;
@@ -35,14 +36,31 @@
   padding: 0.5em;
   width: 100%;
 }
+.blog-section .articles-wrapper .article .article-title h1 {
+  text-wrap: balance;
+  width: 100%;
+  color: azure;
+  transition: ease-in-out 200ms;
+}
+.blog-section .articles-wrapper .article .line-divider {
+  width: 100%;
+  height: 0.1em;
+  background: darkturquoise;
+}
 .blog-section .articles-wrapper .article .details {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0.5em;
 }
+.blog-section .articles-wrapper .article .details h3 {
+  color: rgb(38, 192, 100);
+}
 .blog-section .articles-wrapper .article:hover {
   background-color: rgb(218, 230, 230);
+}
+.blog-section .articles-wrapper .article:hover .article-title h1 {
+  color: cornflowerblue;
 }
 .blog-section .add-new-article {
   flex-basis: 40%;
@@ -64,6 +82,9 @@
   flex-direction: column;
   border: none;
   position: relative;
+}
+.blog-section .add-new-article .add-new-form .add-new-field .error-msg {
+  color: red;
 }
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-input {
   padding: 0.6em;
@@ -90,7 +111,6 @@
   max-height: 10em;
   height: 10em;
   padding: 0.6em;
-  resize: none;
   border: none;
   background: transparent;
   border-left: 2px solid darkturquoise;
@@ -124,6 +144,8 @@
   left: 0.2em;
   transition: transform 200ms ease;
   pointer-events: none;
+  font-weight: bold;
+  font-style: italic;
 }
 .blog-section .add-new-article .add-new-form .submit-new-btn {
   padding: 0.5em;

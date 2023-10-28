@@ -10,7 +10,7 @@ html {
 }
 
 button {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 
 label {
@@ -19,4 +19,25 @@ label {
 
 body {
   background-color: beige;
+}
+
+input {
+  font-size: 1.8rem;
+}
+
+textarea {
+  font-size: 1.4rem;
+  resize: none;
+}
+
+span {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
 }/*# sourceMappingURL=index.css.map */

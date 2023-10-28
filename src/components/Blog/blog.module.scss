@@ -17,29 +17,49 @@
             flex-direction: column;
             align-items: center;
             padding: 1em;
-            background: burlywood;
+            background: rgba(0, 0, 0, .8);
             border-radius: 1em;
             box-shadow: 1px -2px 16px -5px rgba(0,0,0,0.39);
             -webkit-box-shadow: 1px -2px 16px -5px rgba(0,0,0,0.39);
             -moz-box-shadow: 1px -2px 16px -5px rgba(0,0,0,0.39);
             cursor: pointer;
             transition: ease-in-out 200ms;
+            gap: 2em;
             .article-title {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding: 0.5em;
                 width: 100%;
+                h1 {
+                    text-wrap: balance;
+                    width: 100%;
+                    color: azure;
+                    transition: ease-in-out 200ms;
+                }
+            }
+            .line-divider {
+                width: 100%;
+                height: 0.1em;
+                background: darkturquoise;
             }
             .details {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
                 padding: 0.5em;
+                h3 {
+                    color: rgb(38, 192, 100);
+                }
             }
         }
         .article:hover {
             background-color: rgb(218, 230, 230);
+            .article-title {
+                h1 {
+                    color: cornflowerblue;
+                }
+            }
         }
     }
     .add-new-article {
@@ -59,6 +79,9 @@
                 flex-direction: column;
                 border: none;
                 position: relative;
+                .error-msg {
+                    color: red;
+                }
                 .add-new-input {
                     padding: 0.6em;
                     border: none;
@@ -84,7 +107,6 @@
                     max-height: 10em;
                     height: 10em;
                     padding: 0.6em;
-                    resize: none;
                     border: none;
                     background: transparent;
                     border-left: 2px solid darkturquoise;
@@ -118,6 +140,8 @@
                     left: .2em;
                     transition: transform 200ms ease;
                     pointer-events: none;
+                    font-weight: bold;
+                    font-style: italic;
                 }
             }
             .submit-new-btn {
