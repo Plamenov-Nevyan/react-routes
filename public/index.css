@@ -13,7 +13,7 @@ button {
   font-size: 1.8rem;
 }
 
-label, p {
+label, p, a {
   font-size: 1.5rem;
 }
 
@@ -21,7 +21,7 @@ body {
   background-color: beige;
 }
 
-input {
+input, select {
   font-size: 1.8rem;
 }
 

@@ -13,7 +13,7 @@ button {
     font-size: clamp(1.3rem, 1.8rem, 2rem);
 }
 
-label, p {
+label, p, a {
     font-size: clamp(.5rem, 1.5rem, 1.8rem);
 }
 
@@ -21,7 +21,7 @@ body {
     background-color: beige;
 }
 
-input {
+input, select {
     font-size: clamp(1.4rem, 1.8rem, 2rem);
 }
 

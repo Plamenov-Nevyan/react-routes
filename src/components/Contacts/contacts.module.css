@@ -1,0 +1,227 @@
+.contacts-section {
+  width: 98vw;
+  padding: 2em;
+}
+.contacts-section .wrapper {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts-section .wrapper .contacts-form-container {
+  flex: 0 1 45%;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  background-color: #f3d6d4;
+  border-radius: 2rem;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  position: relative;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts .error-msg {
+  color: red;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts input {
+  padding: 0.6em;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 2px solid darkturquoise;
+  opacity: 0.3;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts input:focus {
+  opacity: 1;
+  border-left: 2px solid darkturquoise;
+  background-color: whitesmoke;
+  border-radius: 0 1em 0 0;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts input:hover {
+  background-color: rgb(218, 230, 230);
+  border-radius: 0 1em 0 0;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea {
+  max-height: 10em;
+  height: 10em;
+  padding: 0.6em;
+  border: none;
+  background: transparent;
+  border-left: 2px solid darkturquoise;
+  border-bottom: 2px solid darkturquoise;
+  outline: none;
+  opacity: 0.4;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea:focus {
+  opacity: 1;
+  background-color: whitesmoke;
+  border-radius: 0 1em 0 0;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea:hover {
+  background-color: rgb(218, 230, 230);
+  border-radius: 0 1em 0 0;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts input:focus + label,
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts input + .static,
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea:focus + label,
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea + .static {
+  transform: translateY(-1.5em);
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label, .contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label.static {
+  padding: 0 0.4em;
+  position: absolute;
+  left: 0.5em;
+  top: 0.2em;
+  left: 0.2em;
+  transition: transform 200ms ease-in-out;
+  pointer-events: none;
+  font-weight: bold;
+  font-style: italic;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form #subject-field {
+  border: none;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form #subject-field label {
+  padding: 0 0.4em;
+  font-weight: bold;
+  font-style: italic;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form #subject-field select {
+  padding: 0.4em;
+  border-radius: 1em;
+  cursor: pointer;
+  border: 2px solid darkturquoise;
+  background: transparent;
+}
+.contacts-section .wrapper .contacts-form-container .contacts-form #subject-field select option {
+  background-color: rgba(0, 206, 209, 0.5);
+  color: black;
+}
+.contacts-section .wrapper .outer-links {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 45%;
+  padding: 2rem;
+  gap: 2rem;
+  background: #009FFF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 2rem;
+  box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
+}
+.contacts-section .wrapper .outer-links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.contacts-section .wrapper .outer-links ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+}
+.contacts-section .wrapper .outer-links ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  gap: 1em;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+}
+.contacts-section .wrapper .outer-links ul li a svg {
+  max-width: 3em;
+  max-height: 3em;
+}
+.contacts-section .wrapper .outer-links ul li a:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+.contacts-section .wrapper .outer-links ul li svg {
+  max-width: 4.5em;
+  max-height: 4.5em;
+}
+.contacts-section .wrapper .outer-links ul li:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(1) a svg {
+  fill: rgb(82, 82, 239);
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(2) a svg {
+  fill: rgb(251, 67, 67);
+  background: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(3) a svg {
+  fill: rgb(168, 224, 248);
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(4) a svg {
+  border-radius: 1rem;
+  fill: white;
+  padding: 0.5rem;
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(5) svg {
+  fill: white;
+  background: red;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(6) svg {
+  fill: white;
+  background: rgb(7, 206, 7);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(7) {
+  flex-wrap: wrap;
+  position: relative;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(7) svg {
+  fill: white;
+  background: rgb(7, 113, 206);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.contacts-section .wrapper .outer-links ul li:nth-child(7) span {
+  flex: 1 1 100%;
+  text-align: center;
+  font-style: italic;
+  position: absolute;
+  top: 70%;
+  right: 35%;
+}/*# sourceMappingURL=contacts.module.css.map */
