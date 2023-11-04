@@ -1,3 +1,5 @@
+@import "../../../public/breakpoints.scss" ;
+
 .contacts-section {
     width: 98vw;
     padding: 2em;
@@ -8,6 +10,9 @@
         flex-wrap: wrap;
         justify-content: center;
         .contacts-form-container {
+            @include lg {
+                flex-basis: 100%;
+            }
             flex:0 1 45%;
             .contacts-form {
                 display: flex;
@@ -90,6 +95,9 @@
                     }
                 }
                 #subject-field {
+                    @include lsm {
+                        flex-direction: column;
+                    }
                     border: none;
                     display: flex;
                     gap: 1em;
@@ -114,6 +122,9 @@
             }
         }
         .outer-links {
+            @include lg {
+                flex-basis: 100%;
+            }
             display: flex;
             flex-direction: column;
             flex: 0 1 45%;
@@ -132,6 +143,9 @@
                 flex-direction: column;
                 gap: .5em;
                 li {
+                    @include lg {
+                        letter-spacing: 1px;
+                    }
                     width: 100%;
                     display: flex;
                     align-items: center;
@@ -143,6 +157,9 @@
                     color: PaleGoldenRod;
                     outline: none;
                     a {
+                        @include lg {
+                            letter-spacing: 1px;
+                        }
                         display: flex;
                         align-items: center;
                         text-decoration: none;

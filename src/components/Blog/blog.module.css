@@ -6,6 +6,11 @@
   height: -moz-fit-content;
   height: fit-content;
 }
+@media only screen and (max-width: 768px) {
+  .blog-section {
+    flex-direction: column;
+  }
+}
 .blog-section .articles-wrapper {
   flex-basis: 60%;
   display: flex;
@@ -52,6 +57,12 @@
   justify-content: space-between;
   width: 100%;
   padding: 0.5em;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .blog-section .articles-wrapper .article .details {
+    gap: 1em;
+  }
 }
 .blog-section .articles-wrapper .article .details h3 {
   color: rgb(38, 192, 100);

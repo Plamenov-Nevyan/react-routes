@@ -12,6 +12,11 @@
 .contacts-section .wrapper .contacts-form-container {
   flex: 0 1 45%;
 }
+@media only screen and (max-width: 768px) {
+  .contacts-section .wrapper .contacts-form-container {
+    flex-basis: 100%;
+  }
+}
 .contacts-section .wrapper .contacts-form-container .contacts-form {
   display: flex;
   flex-direction: column;
@@ -99,6 +104,11 @@
   gap: 1em;
   align-items: center;
 }
+@media only screen and (max-width: 470px) {
+  .contacts-section .wrapper .contacts-form-container .contacts-form #subject-field {
+    flex-direction: column;
+  }
+}
 .contacts-section .wrapper .contacts-form-container .contacts-form #subject-field label {
   padding: 0 0.4em;
   font-weight: bold;
@@ -128,6 +138,11 @@
   -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
 }
+@media only screen and (max-width: 768px) {
+  .contacts-section .wrapper .outer-links {
+    flex-basis: 100%;
+  }
+}
 .contacts-section .wrapper .outer-links ul {
   list-style-type: none;
   display: flex;
@@ -146,6 +161,11 @@
   color: PaleGoldenRod;
   outline: none;
 }
+@media only screen and (max-width: 768px) {
+  .contacts-section .wrapper .outer-links ul li {
+    letter-spacing: 1px;
+  }
+}
 .contacts-section .wrapper .outer-links ul li a {
   display: flex;
   align-items: center;
@@ -158,6 +178,11 @@
   margin-bottom: 0.8rem;
   color: PaleGoldenRod;
   outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .contacts-section .wrapper .outer-links ul li a {
+    letter-spacing: 1px;
+  }
 }
 .contacts-section .wrapper .outer-links ul li a svg {
   max-width: 3em;
