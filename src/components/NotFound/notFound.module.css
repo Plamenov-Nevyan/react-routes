@@ -1,0 +1,12 @@
+.not-found-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found-section img {
+  max-width: 50%;
+}
+.not-found-section h1 {
+  color: blueviolet;
+  font-style: italic;
+}/*# sourceMappingURL=notFound.module.css.map */
