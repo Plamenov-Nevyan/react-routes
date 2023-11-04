@@ -65,6 +65,8 @@
 .blog-section .add-new-article {
   flex-basis: 40%;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
   height: -moz-fit-content;
   height: fit-content;
@@ -142,7 +144,7 @@
   left: 0.5em;
   top: 0.2em;
   left: 0.2em;
-  transition: transform 200ms ease;
+  transition: transform 200ms ease-in-out;
   pointer-events: none;
   font-weight: bold;
   font-style: italic;

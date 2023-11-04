@@ -65,6 +65,8 @@
     .add-new-article {
         flex-basis: 40%;
         display: flex;
+        flex-direction: column;
+        gap: 2rem;
         justify-content: center;
         height: fit-content;
         position: sticky;
@@ -138,7 +140,7 @@
                     left: 0.5em;
                     top: .2em;
                     left: .2em;
-                    transition: transform 200ms ease;
+                    transition: transform 200ms ease-in-out;
                     pointer-events: none;
                     font-weight: bold;
                     font-style: italic;

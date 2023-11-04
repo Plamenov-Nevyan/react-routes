@@ -2,6 +2,7 @@ import blogData from "./blogData.json";
 import styles from "./blog.module.css";
 import { useState, useRef } from "react";
 import { convertMonth } from "../../utils/convertMonth";
+import { useNavigate } from "react-router-dom";
 
 export function Blog() {
   const newArticleRef = useRef(null)
@@ -18,6 +19,8 @@ export function Blog() {
     date: "",
     id: "",
   });
+
+  const navigate = useNavigate()
 
   const onValsChange = (e) => {
     setAddNewFormVals((oldVals) => {
@@ -86,11 +89,22 @@ export function Blog() {
     return errorsForProcess
   }
 
+  function onArticleClick(e){
+    navigate(`/blog/${e.target.id}`)
+  }
+
   return (
     <section className={styles["blog-section"]}>
       <div className={styles["articles-wrapper"]}>
+        <h1>Articles:</h1>
         {articles.map((article, index) => (
-          <article key={article.id} className={styles["article"]} ref={index === articles.length - 1 ? newArticleRef : null}>
+          <article 
+           key={article.id} 
+           id={article.id}
+           className={styles["article"]} 
+           ref={index === articles.length - 1 ? newArticleRef : null}
+           onClick={(e) => onArticleClick(e)}
+           >
             <div className={styles["article-title"]}>
               <h1>{article.title}</h1>
             </div>
@@ -103,6 +117,7 @@ export function Blog() {
         ))}
       </div>
       <div className={styles["add-new-article"]}>
+        <h1>Create new article:</h1>
         <form className={styles["add-new-form"]} onSubmit={(e) => onAddNew(e)}>
           <fieldset className={styles["add-new-field"]}>
             <input
