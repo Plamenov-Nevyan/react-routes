@@ -1,43 +1,46 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
-    font-size: clamp(1.3rem, 1.8rem, 2rem);
+  font-size: clamp(1.3rem, 1.8rem, 2rem);
 }
 
-label, p, a {
-    font-size: clamp(.5rem, 1.5rem, 1.8rem);
+label,
+p,
+a {
+  font-size: clamp(0.5rem, 1.5rem, 1.8rem);
 }
 
 body {
-    background-color: beige;
+  background-color: beige;
 }
 
-input, select {
-    font-size: clamp(1.4rem, 1.8rem, 2rem);
+input,
+select {
+  font-size: clamp(1.4rem, 1.8rem, 2rem);
 }
 
 textarea {
-    font-size: clamp(1.1rem, 1.4rem, 1.8rem);
-    resize: none;
+  font-size: clamp(1.1rem, 1.4rem, 1.8rem);
+  resize: none;
 }
 
 span {
-    font-size: clamp(1.1rem, 1.4rem, 1.6rem);
+  font-size: clamp(1.1rem, 1.4rem, 1.6rem);
 }
 
 h1 {
-    font-size: clamp(1.6rem, 2.1rem, 2.8rem);
+  font-size: clamp(1.6rem, 2.1rem, 2.8rem);
 }
 
 h3 {
-    font-size: clamp(1.4rem, 1.7rem, 2rem);
+  font-size: clamp(1.4rem, 1.7rem, 2rem);
 }

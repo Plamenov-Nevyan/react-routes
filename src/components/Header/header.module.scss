@@ -1,40 +1,40 @@
-@import "../../../public/breakpoints.scss" ;
+@import "../../../public/breakpoints.scss";
 
-.site-header{
-    background-image: url("./header-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 20vh;
-    position: relative;
+.site-header {
+  background-image: url("./header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  .nav-visibility-btn {
+    @include lg {
+      flex-basis: 20%;
+    }
+    @include sm {
+      flex-basis: 15%;
+    }
+    flex-basis: 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1em;
-    .nav-visibility-btn {
-        @include lg {
-            flex-basis: 20%;
-        }
-        @include sm {
-            flex-basis: 15%;
-        }
-        flex-basis: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: whitesmoke;
-        border-radius: 5em;
-        cursor: pointer;
-        padding: .8em;
-        transition: ease-in-out 200ms;
-        svg {
-            max-width: 3em;
-            transition: ease-in-out 200ms;
-        }
+    background: whitesmoke;
+    border-radius: 5em;
+    cursor: pointer;
+    padding: 0.8em;
+    transition: ease-in-out 200ms;
+    svg {
+      max-width: 3em;
+      transition: ease-in-out 200ms;
     }
-    .nav-visibility-btn:hover {
-        background-color: rgb(218, 230, 230);
-        svg {
-            fill: cornflowerblue;
-        }
+  }
+  .nav-visibility-btn:hover {
+    background-color: rgb(218, 230, 230);
+    svg {
+      fill: cornflowerblue;
     }
+  }
 }

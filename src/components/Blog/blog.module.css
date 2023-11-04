@@ -149,7 +149,8 @@
 .blog-section .add-new-article .add-new-form .add-new-field .add-new-textarea + .static {
   transform: translateY(-1.5em);
 }
-.blog-section .add-new-article .add-new-form .add-new-field .add-new-label, .blog-section .add-new-article .add-new-form .add-new-field .static {
+.blog-section .add-new-article .add-new-form .add-new-field .add-new-label,
+.blog-section .add-new-article .add-new-form .add-new-field .static {
   padding: 0 0.4em;
   position: absolute;
   left: 0.5em;

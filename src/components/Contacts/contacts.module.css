@@ -87,7 +87,8 @@
 .contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts textarea + .static {
   transform: translateY(-1.5em);
 }
-.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label, .contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label.static {
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label,
+.contacts-section .wrapper .contacts-form-container .contacts-form .input-contacts label.static {
   padding: 0 0.4em;
   position: absolute;
   left: 0.5em;
@@ -131,8 +132,8 @@
   flex: 0 1 45%;
   padding: 2rem;
   gap: 2rem;
-  background: #009FFF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #009fff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2f4b, #009fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 2rem;
   box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 1px -2px 16px -5px rgba(0, 0, 0, 0.39);

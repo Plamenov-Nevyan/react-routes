@@ -6,8 +6,8 @@ export function Home() {
   const [errors, setErrors] = useState([]);
 
   const onNumBtnPress = (e) => {
-    if(errors.length > 0){
-        setErrors(oldVal => [])
+    if (errors.length > 0) {
+      setErrors((oldVal) => []);
     }
     setCalcOperation((currentOperation) => (currentOperation += e.target.id));
   };
@@ -42,34 +42,34 @@ export function Home() {
   const onCalculateOperation = () => {
     let operation = calcOperation.trim().split(" ");
     let [num1, operand, num2] = [operation[0], operation[1], operation[2]];
-    let errorsForProcess = checkForErrors();    
+    let errorsForProcess = checkForErrors();
     if (errorsForProcess.length > 0) {
       return setErrors((oldErrors) => [...errorsForProcess]);
     }
     let result;
     switch (operand) {
       case "+":
-         result = Number(num1) + Number(num2)
+        result = Number(num1) + Number(num2);
         setCalcOperation((oldOperation) => result.toString());
         break;
       case "-":
-         if(Number(num1) < Number(num2)){
-            result = Number(num2) - Number(num1)
-         }else {
-            result = Number(num1) - Number(num2)
-         }
+        if (Number(num1) < Number(num2)) {
+          result = Number(num2) - Number(num1);
+        } else {
+          result = Number(num1) - Number(num2);
+        }
         setCalcOperation((oldOperation) => result.toString());
         break;
       case "*":
-        result = Number(num1) * Number(num2)
+        result = Number(num1) * Number(num2);
         setCalcOperation((oldOperation) => result.toString());
         break;
       case "/":
-        result = Number(num1) / Number(num2)
+        result = Number(num1) / Number(num2);
         setCalcOperation((oldOperation) => result.toString());
         break;
       case "%":
-        result = Number(num1) % Number(num2)
+        result = Number(num1) % Number(num2);
         setCalcOperation((oldOperation) => result.toString());
         break;
     }
@@ -77,9 +77,9 @@ export function Home() {
 
   const checkForErrors = () => {
     let errorsForProcess = [];
-    if(calcOperation.length <= 0){
-        errorsForProcess.push('Please select numbers and operator!')
-        return errorsForProcess
+    if (calcOperation.length <= 0) {
+      errorsForProcess.push("Please select numbers and operator!");
+      return errorsForProcess;
     }
     let operationForProcess = calcOperation.trim().split(" ").join("");
     if (
@@ -104,21 +104,26 @@ export function Home() {
         operationForProcess.split("").indexOf("%") - 1 < 0)
     ) {
       errorsForProcess.push("Please enter your first number !");
-      return errorsForProcess
+      return errorsForProcess;
     } else if (
       (operationForProcess.includes("+") &&
-        operationForProcess.split("").indexOf("+") + 1 >= operationForProcess.length ) ||
+        operationForProcess.split("").indexOf("+") + 1 >=
+          operationForProcess.length) ||
       (operationForProcess.includes("-") &&
-        operationForProcess.split("").indexOf("-") + 1 >= operationForProcess.length ) ||
+        operationForProcess.split("").indexOf("-") + 1 >=
+          operationForProcess.length) ||
       (operationForProcess.includes("*") &&
-        operationForProcess.split("").indexOf("*") + 1 >= operationForProcess.length ) ||
+        operationForProcess.split("").indexOf("*") + 1 >=
+          operationForProcess.length) ||
       (operationForProcess.includes("/") &&
-        operationForProcess.split("").indexOf("/") + 1 >= operationForProcess.length ) ||
+        operationForProcess.split("").indexOf("/") + 1 >=
+          operationForProcess.length) ||
       (operationForProcess.includes("%") &&
-        operationForProcess.split("").indexOf("%") + 1 >= operationForProcess.length )
+        operationForProcess.split("").indexOf("%") + 1 >=
+          operationForProcess.length)
     ) {
       errorsForProcess.push("Please enter your second number !");
-      return errorsForProcess
+      return errorsForProcess;
     }
     let operation = calcOperation.trim().split(" ");
     let [num1, operand, num2] = [operation[0], operation[1], operation[2]];
@@ -136,7 +141,7 @@ export function Home() {
         errorsForProcess.push("Your second number is invalid float number!");
       }
     }
-    return errorsForProcess
+    return errorsForProcess;
   };
 
   return (
@@ -144,7 +149,9 @@ export function Home() {
       <div className={styles.calculator}>
         {errors.length > 0 &&
           errors.map((error, index) => (
-            <span key={index} className={styles["error-message"]}>{error}</span>
+            <span key={index} className={styles["error-message"]}>
+              {error}
+            </span>
           ))}
         <section className={styles["calculator-top"]}>
           <input
@@ -266,8 +273,8 @@ export function Home() {
               </button>
             </div>
             <div className={styles["button-container"]}>
-              <button 
-                className="equals" 
+              <button
+                className="equals"
                 id="="
                 onClick={() => onCalculateOperation()}
               >
